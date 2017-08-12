@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AutoCompleteDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="message1">最近去过哪个国家？</string>
+    <string name="message2">还去过哪个国家？</string>
+</resources>
