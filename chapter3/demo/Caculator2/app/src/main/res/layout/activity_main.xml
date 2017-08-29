@@ -134,11 +134,11 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnAdd"
+                android:id="@+id/btnMinus"
                 android:layout_width="wrap_content"
                 android:layout_height="75dp"
                 android:layout_weight="1"
-                android:text="+"
+                android:text="-"
                 android:textSize="40sp"
                 android:textStyle="bold" />
 

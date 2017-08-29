@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btn8;
     private Button btn9;
     private Button btn0;
-    private Button btnAdd;
+    private Button btnMinus;
     private Button btnEquals;
     private TextView tvResult;
     private boolean isTypingNumber;
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         btn8 = (Button) findViewById(R.id.btn8);
         btn9 = (Button) findViewById(R.id.btn9);
         btn0 = (Button) findViewById(R.id.btn0);
-        btnAdd = (Button) findViewById(R.id.btnAdd);
+        btnMinus = (Button) findViewById(R.id.btnMinus);
         btnEquals = (Button) findViewById(R.id.btnEquals);
         tvResult = (TextView) findViewById(R.id.tvResult);
 
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         btn8.setOnClickListener(listener);
         btn9.setOnClickListener(listener);
 
-        btnAdd.setOnClickListener(new View.OnClickListener() {
+        btnMinus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 OperatorClicked(v);
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
     private void EqualsClicked(View v) {
         isTypingNumber = false;
         secondNum = Integer.parseInt(tvResult.getText().toString());
-        String result = String.valueOf(firstNum + secondNum);
+        String result = String.valueOf(firstNum - secondNum);
         tvResult.setText(result);
     }
 
